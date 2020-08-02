@@ -23,14 +23,14 @@
                         <div class="userinfo">
                             <img src="http://t.cn/RCzsdCq" class="layui-nav-img">
                             <span class="text-avator">F</span>
-                            <span>ffzd</span>
+                            个人资料
                         </div>
 
                     </a>
                     <dl class="layui-nav-child">
-                        <dd><a href="">基本资料</a></dd>
-                        <dd><a href="">更换头像</a></dd>
-                        <dd><a href="">更换密码</a></dd>
+                        <dd><a href="/user/user_info.html" target="fm">基本资料</a></dd>
+                        <dd><a href="/user/user_avator.html" target="fm">更换头像</a></dd>
+                        <dd><a href="/user/user_pwd.html" target="fm">更换密码</a></dd>
                     </dl>
                 </li>
                 <li class="layui-nav-item exit">
@@ -46,7 +46,7 @@
                 <div class="userinfo">
                     <img src="http://t.cn/RCzsdCq" class="layui-nav-img">
                     <span class="text-avator">F</span>
-                    <span>欢迎&nbsp;&nbsp;ffzd</span>
+                    <span id="welcome">111</span>
                 </div>
                 <ul class="layui-nav layui-nav-tree" lay-filter="test" lay-shrink="all">
                     <li class="layui-nav-item layui-this"><a href="/home/dashboard.html" target="fm"><span
@@ -63,9 +63,9 @@
                     <li class="layui-nav-item">
                         <a href="javascript:;"><span class="iconfont icon-user"></span>个人中心</a>
                         <dl class="layui-nav-child">
-                            <dd><a href="javascript:;">基本资料</a></dd>
-                            <dd><a href="javascript:;">更换头像</a></dd>
-                            <dd><a href="javascript:;">重置密码</a></dd>
+                            <dd><a href="/user/user_info.html" target="fm">基本资料</a></dd>
+                            <dd><a href="/user/user_avator.html" target="fm">更换头像</a></dd>
+                            <dd><a href="/user/user_pwd.html" target="fm">重置密码</a></dd>
 
                         </dl>
                     </li>
@@ -90,13 +90,7 @@
     <script src="/assets/js/baseAPI.js"></script>
     <!-- 导入自己的js文件 -->
     <script src="/assets/js/index.js"></script>
-    <script>
-        //JavaScript代码区域
-        layui.use('element', function () {
-            var element = layui.element;
 
-        });
-    </script>
 </body>
 
 </html>

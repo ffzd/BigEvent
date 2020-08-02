@@ -34,7 +34,9 @@ function getUserInfo() {
 function renderAvatar(user) {
     // 1.获取用户名称
     var name = user.nickname || user.username
+    // console.log($('#welcome'))
     // 2.设置欢迎的文本
+    // 注意：id标签只能渲染一次
     $('#welcome').html('欢迎&nbsp;&nbsp;' + name)
     // 3.按需渲染用户头像
     if (user.user_pic != null) {
@@ -46,3 +48,4 @@ function renderAvatar(user) {
 
     }
 }
+
